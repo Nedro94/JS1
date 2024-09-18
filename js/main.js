@@ -20,16 +20,17 @@ function calcular() {
     // Tipos de operaciones
     if (operacion === '1') {
       resultado = num1 + num2;
+      alert(num1 +' + '+ num2 +' = '+ resultado);
     } else if (operacion === '2') {
       resultado = num1 - num2;
+      alert(num1 +' - '+ num2 +' = '+ resultado)
     }else if (operacion === '3') {
       resultado = num1 * num2;
+      alert(num1 +' * '+ num2 +' = '+ resultado)
     }else if (operacion === '4') {
       resultado = num1 / num2;
+      alert(num1 +' / '+ num2 +' = '+ resultado)
     }
-  
-    // Mostrar el resultado al usuario
-    alert(`El resultado es: ${resultado}`);
 
     //repite el bucle hasta darse condicion de cierre
     if(operacion!=0){
