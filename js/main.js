@@ -16,21 +16,24 @@ function calcular() {
   
     // variable para el resultado
     let resultado;
+    let simbolo;
   
     // Tipos de operaciones
     if (operacion === '1') {
       resultado = num1 + num2;
-      alert(num1 +' + '+ num2 +' = '+ resultado);
+      simbolo= ' + '
     } else if (operacion === '2') {
       resultado = num1 - num2;
-      alert(num1 +' - '+ num2 +' = '+ resultado)
+      simbolo= ' - '
     }else if (operacion === '3') {
       resultado = num1 * num2;
-      alert(num1 +' * '+ num2 +' = '+ resultado)
+      simbolo= ' * '
     }else if (operacion === '4') {
       resultado = num1 / num2;
-      alert(num1 +' / '+ num2 +' = '+ resultado)
+      simbolo= ' / '
     }
+
+    alert(num1 + simbolo + num2 +' = '+ resultado);
 
     //repite el bucle hasta darse condicion de cierre
     if(operacion!=0){
